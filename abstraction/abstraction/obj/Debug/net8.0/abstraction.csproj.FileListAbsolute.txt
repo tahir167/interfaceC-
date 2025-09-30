@@ -12,3 +12,4 @@ C:\Users\hp\OneDrive\Desktop\abstraction\abstraction\abstraction\obj\Debug\net8.
 C:\Users\hp\OneDrive\Desktop\abstraction\abstraction\abstraction\obj\Debug\net8.0\abstraction.pdb
 C:\Users\hp\OneDrive\Desktop\abstraction\abstraction\abstraction\obj\Debug\net8.0\abstraction.genruntimeconfig.cache
 C:\Users\hp\OneDrive\Desktop\abstraction\abstraction\abstraction\obj\Debug\net8.0\ref\abstraction.dll
+C:\Users\hp\OneDrive\Desktop\abstraction\abstraction\abstraction\obj\Debug\net8.0\abstraction.sourcelink.json

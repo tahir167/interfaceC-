@@ -52,5 +52,56 @@ namespace abstraction
 
             return filtered;
         }
+        public Employee[] SearchByFullName(string fullNamePart)
+        {
+            int count = 0;
+
+            foreach (var emp in employees)
+            {
+                if (emp.FullName.Contains(fullNamePart))
+                {
+                    count++;
+                }
+            }
+
+            Employee[] filtered = new Employee[count];
+            int index = 0;
+
+            foreach (var emp in employees)
+            {
+                if (emp.FullName.Contains(fullNamePart))
+                {
+                    filtered[index] = emp;
+                    index++;
+                }
+            }
+
+            return filtered;
+        }
+        public Employee[] SortByAge()
+        {
+            Employee[] sorted = new Employee[employees.Length];
+            for (int i = 0; i < employees.Length; i++)
+            {
+                sorted[i] = employees[i];
+            }
+
+            for (int i = 0; i < sorted.Length - 1; i++)
+            {
+                for (int j = 0; j < sorted.Length - i - 1; j++)
+                {
+                    if (sorted[j].Age > sorted[j + 1].Age)
+                    {
+                        Employee temp = sorted[j];
+                        sorted[j] = sorted[j + 1];
+                        sorted[j + 1] = temp;
+                    }
+                }
+            }
+
+            return sorted;
+        }
+
+
     }
 }

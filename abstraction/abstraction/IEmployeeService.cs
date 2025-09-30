@@ -10,5 +10,7 @@ namespace abstraction
     {
         Employee[] GetAll();
         Employee[] FilterByAddress(string address);
+        Employee[] SearchByFullName(string fullName);
+        Employee[] SortByAge();
     }
 }
